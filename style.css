@@ -6,12 +6,12 @@ body {
 }
 .container {
 	display: flex;
-	width: 20vh;
-	height: 20vh;
+	width: 50vh;
+	height: 50vh;
 	/*border: 1px solid black;*/
 	position: relative;
 	box-sizing: content-box;
-	/* overflow: hidden; */
+	overflow: hidden;
 }
 .buttons {
 	width: 50vh;

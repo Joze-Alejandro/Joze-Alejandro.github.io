@@ -48,19 +48,12 @@ function slides(i) {
 	// alert(rout);
 	b = c;
 
-	
-	
-
-	
-
-	slide[c].style.zIndex = rl;
-	slide[n].style.zIndex = rout ? (rl - 2) : (rl - 1);
-	slide[p].style.zIndex = rout ? (rl - 1) : (rl - 2);
 
 	for(let q=0; q<rl; q++) {
-		slide[q].style.zIndex = ((q != c) && (q != n) && (q != p)) ? 0 : slide[q].style.zIndex;
-		// alert(slide[q].style.zIndex);
-		// slide[q].style.left = ((q != c) && (q != n) && (q != p)) ? "-100%" : slide[q].style.left;
+		x = q + c + Math.ceil(rl / 2);
+		x = nplet(x);
+		t = rout ? (rl - 1) - q : q;
+		slide[x].style.zIndex = t;
 	};
 
 	console.log('порядок слайдов '+(c + 1));
@@ -69,7 +62,7 @@ function slides(i) {
 		x = nplet(x);
 		t = q - Math.floor(rl / 2);
 		slide[x].style.left = 100 * t + "%";
-		console.log('слайд '+x);
+		console.log('слайд '+(x + 1));
 	};
 
 }
