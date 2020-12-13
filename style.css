@@ -1,23 +1,29 @@
+* {
+	font-size: 12px !important;
+    font-family: Consolas, Lucida Console, monospace;
+}
 body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	
 }
 .container {
 	display: flex;
 	width: 50vh;
 	height: 50vh;
-	/*border: 1px solid black;*/
+	/* border: 1px solid black; */
 	position: relative;
 	box-sizing: content-box;
 	overflow: hidden;
 }
-.buttons {
+.control {
 	width: 50vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
 }
 button {
 	min-height: 20px;
@@ -26,7 +32,7 @@ button {
 	background-color: #fff; /*#4bcaff*/
 	border: none;
 	outline: none;
-	font: bold 10px 'Courier';
+	font-weight: bold;
 	margin: 5px;
 }
 button:hover {
@@ -40,7 +46,7 @@ button:hover {
 	justify-content: center;
 	min-width: 100%;
 	height: 100%;
-	left: 100%;
+	/* left: 100%; */
 	transition: left 1s ease-out;
 }
 .round {
@@ -51,6 +57,7 @@ button:hover {
 }
 .slide1 {
 	background-color: #ED9391;
+	/* left: 0; */
 }
 .slide2 {
 	background-color: #72BA77;
@@ -103,8 +110,15 @@ input:checked {
 	width: 14px;
 	margin: 3px;
 }
-.radiobuttons {
+.slide-radiocontrol {
 	display: flex;
 	justify-content: center;
 	width: 20vh;
+}
+.slider-powerswitch {
+	display: none;
+	position: absolute;
+	border-radius: 0;
+	transform: translateX(-200%);
+	margin: 0px;
 }
