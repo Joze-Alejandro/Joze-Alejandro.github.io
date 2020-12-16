@@ -1,0 +1,124 @@
+* {
+	font-size: 12px !important;
+    font-family: Consolas, Lucida Console, monospace;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+.container {
+	display: flex;
+	width: 50vh;
+	height: 50vh;
+	/* border: 1px solid black; */
+	position: relative;
+	box-sizing: content-box;
+	overflow: hidden;
+}
+.control {
+	width: 50vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+button {
+	min-height: 20px;
+	min-width: 20px;
+	border-radius: 50%;
+	background-color: #fff; /*#4bcaff*/
+	border: none;
+	outline: none;
+	font-weight: bold;
+	margin: 5px;
+}
+button:hover {
+	background-color: #6F3B39;
+	color: #fff;
+}
+.slide {
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	min-width: 100%;
+	height: 100%;
+	/* left: 100%; */
+	transition: left 1s ease-out;
+}
+.round {
+	width: 1vh;
+	height: 1vh;
+	border-radius: 0.5vh;
+	background-color: white;
+}
+.slide1 {
+	background-color: #ED9391;
+	/* left: 0; */
+}
+.slide2 {
+	background-color: #72BA77;
+}
+.slide3 {
+	background-color: #796BA3;
+}
+.slide4 {
+	background-color: #EDDD91;
+}
+.slide5 {
+	background-color: #FDC9C8;
+}
+.slide6 {
+	background-color: #C5F9C8;
+}
+.slide7 {
+	background-color: #D4C9F7;
+}
+.slide8 {
+	background-color: #FDF5C8;
+}
+.slide9 {
+	background-color: #578E8E;
+}
+.active {
+	left: 0;
+}
+input {
+	-webkit-appearance: none;
+	height: 10px;
+	width: 10px;
+	background-color: rgba(255, 255, 255, 0);
+	border-radius: 50%;
+	box-sizing: content-box;
+	border: 1px solid #6F3B39;
+	margin: 5px;
+	outline: none;
+	transition: 0.1s ease-out;
+}
+input:hover {
+	height: 14px;
+	width: 14px;
+	margin: 3px;
+}
+input:checked {
+	background-color: #6F3B39;
+	border-color: #6F3B39;
+	height: 14px;
+	width: 14px;
+	margin: 3px;
+}
+.slide-radiocontrol {
+	display: flex;
+	justify-content: center;
+	width: 20vh;
+}
+.slider-powerswitch {
+	display: none;
+	position: absolute;
+	border-radius: 0;
+	transform: translateX(-200%);
+	margin: 0px;
+}
