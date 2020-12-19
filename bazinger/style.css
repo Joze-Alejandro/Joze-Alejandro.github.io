@@ -11,6 +11,14 @@ body {
 	/*min-width: 483px;*/
 	min-width: 445px;
 }
+@media only screen and (max-device-width: 480px) {
+	body {
+		background-color: red;
+	}
+	.base__icon > use {
+		fill: red;
+	}
+}
 body::-webkit-scrollbar {
     width: 0px;
 }
